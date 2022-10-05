@@ -68,5 +68,22 @@ def removeduplicates (x):
 
 removeduplicates(list)
 
+# He needs a function that prints the last word and its lenght as a tuple 
+string = "Hello, im Max"
+
+def lastword(x):
+    newstring = x[::-1]        # reverses the string
+    laststring = ""            # our answer
+    for i in newstring:        # checks every character in the reversed string
+        if i == " ":           # if the character is a space then we already have the last word chosen, but its reversed
+            break
+        else:
+            laststring = laststring + i #adds the letter to the answer
+    word = laststring [::-1]            # the answer right now is the last word but reversed, so we need to reverse it again
+    number = len(laststring)            # gets the lenght of the word
+    print((word,number))                # prints the last word and its lenght as a tuple
+
+lastword(string)
+
 #NOTE: My friend is a student that is new to python so this needed to be done with self explanatory methods and the comments 
 #      are written for an unexperienced programmer to read

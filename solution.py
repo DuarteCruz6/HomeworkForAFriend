@@ -53,5 +53,20 @@ string = "abcdeedd" # a1 b1 c1 d3 e2
 
 countingcharacters(string)
 
+# He needs a function that creates a list with no duplicates
+
+list = [1,2,3,4,4,3,2,5]
+
+def removeduplicates (x):
+    newlist = []                # new list for non duplicates
+    for i in x:
+        if i not in newlist:
+            newlist.append(i)   # if the number is not in newlist, then its a new number, so we add to newlist
+        else:
+            pass                # if the number is in newlist, then its not a new number, its a duplicate. we dont need to do anything
+    print(newlist)
+
+removeduplicates(list)
+
 #NOTE: My friend is a student that is new to python so this needed to be done with self explanatory methods and the comments 
 #      are written for an unexperienced programmer to read

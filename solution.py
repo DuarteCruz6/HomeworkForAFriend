@@ -36,4 +36,4 @@ def lastwordcharacters(x):
 lastwordcharacters(string)
 
 #NOTE: My friend is a student that is new to python so this needed to be done with self explanatory methods and the comments 
-       # are written for an unexperienced programmer to read
+#      are written for an unexperienced programmer to read

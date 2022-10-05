@@ -35,5 +35,23 @@ def lastwordcharacters(x):
 
 lastwordcharacters(string)
 
+# He needs a function that counts the number of times a letter appears in a string
+
+dict = {}                       # This is the dict
+def countingcharacters(x):      
+    for i in x:
+        if i == " ":            # Ignores spaces
+            pass
+        if i in dict:           # The function checks if the letter is repeated and adds 1 to the number of occurrences 
+            dict[i] += 1
+        else:
+            update = {i:1}      # Adds the new letter and updates its value to 1 
+            dict.update(update) 
+    print(dict)
+
+string = "abcdeedd" # a1 b1 c1 d3 e2
+
+countingcharacters(string)
+
 #NOTE: My friend is a student that is new to python so this needed to be done with self explanatory methods and the comments 
 #      are written for an unexperienced programmer to read
